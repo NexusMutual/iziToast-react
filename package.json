@@ -44,8 +44,8 @@
     "test:watch": "react-scripts test --env=jsdom",
     "build": "rollup -c",
     "start": "rollup -c -w",
-    "prepare": "yarn run build",
-    "predeploy": "cd example && yarn install && yarn run build",
+    "prepare": "npx yarn run build",
+    "predeploy": "cd example && npx yarn install && npx yarn run build",
     "deploy": "gh-pages -d example/build"
   },
   "dependencies": {
